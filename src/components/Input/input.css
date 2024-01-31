@@ -1,0 +1,28 @@
+.Input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  height: 40px;
+}
+.text-input {
+  width: 80%;
+  border: none;
+  height: 100%;
+  padding-left: 10px;
+  
+}
+.text-input:focus {
+    outline: none;
+}
+
+
+
+.btn-add {
+  width: 20%;
+  background-color: gray;
+  border: none;
+  font-weight: bold;
+  color: white;
+  height: 100%;
+}

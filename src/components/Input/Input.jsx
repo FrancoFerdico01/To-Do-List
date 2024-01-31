@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import './input.css'
 const Input = ({ setAddTask }) => {
   const [inputValue, setInputValue] = useState("");
   function handleInput(event) {
@@ -19,11 +19,9 @@ const Input = ({ setAddTask }) => {
   };
 
   return (
-    <form type="submit" onSubmit={handleClick}>
-      <div>
-        <input type="text" value={inputValue} onChange={handleInput} />
-        <button onClick={handleClick}> Add Task </button>
-      </div>
+    <form className="Input" type="submit" onSubmit={handleClick}>
+      <input className="text-input"  placeholder ='Write a task...'type="text" value={inputValue} onChange={handleInput} />
+      <button className="btn-add" onClick={handleClick}> Add Task </button>
     </form>
   );
 };

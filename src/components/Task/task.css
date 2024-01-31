@@ -1,0 +1,24 @@
+.Task{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.paragraph{
+
+}
+ 
+.btn{
+    border: none;
+    background-color: transparent;
+    
+ 
+}
+
+.icon-delete{
+    font-size: 24px;
+    color: gray;
+
+}

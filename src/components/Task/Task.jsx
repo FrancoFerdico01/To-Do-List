@@ -1,9 +1,13 @@
+import { MdDelete } from "react-icons/md";
+import './task.css'
 const Task = ({ task, deleteTask }) => {
- 
   return (
-    <li>
-      <p>{task.todo}</p>
-      <button onClick={() => deleteTask(task.id)}></button>
+    <li className="Task">
+      <p className="paragraph">{task.todo}</p>
+
+      <button className="btn" onClick={() => deleteTask(task.id)}>
+        <MdDelete className="icon-delete"/>
+      </button>
     </li>
   );
 };
